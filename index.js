@@ -4,7 +4,7 @@ module.exports = function({typescript}) {
       const resolveModuleNames = info.languageServiceHost.resolveModuleNames.bind(info.languageServiceHost);
 
       info.languageServiceHost.resolveModuleNames = function (moduleNames, containingFile, reusedNames, redirectedReferences, options) {
-        console.log("modules", moduleNames);
+        console.log("testando", moduleNames);
         return resolveModuleNames(moduleNames, containingFile, reusedNames, redirectedReferences, options);
       }
 
